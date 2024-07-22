@@ -1,0 +1,86 @@
+@use '@/styles/variables' as v;
+@use '@/styles/mixins' as mixin;
+
+p,
+h1,
+h2,
+h3,
+span {
+  font-family: v.$font-family;
+}
+
+p,
+.p,
+span,
+.small {
+  font-weight: v.$font-weight-normal;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  font-weight: v.$font-weight-semi-bold;
+}
+
+h1,
+.h1 {
+  @include mixin.setVariantResponsiveFonts(h1);
+}
+
+h2,
+.h2 {
+  @include mixin.setVariantResponsiveFonts(h2);
+}
+
+h3,
+.h3 {
+  @include mixin.setVariantResponsiveFonts(h3);
+}
+
+p,
+.p {
+  @include mixin.setVariantResponsiveFonts(p);
+}
+
+.small {
+  @include mixin.setVariantResponsiveFonts(small);
+}
+
+.default {
+  color: v.$on-surface;
+}
+
+.primary {
+  color: v.$primary;
+}
+
+.danger {
+  color: v.$danger;
+}
+
+.success {
+  color: v.$success;
+}
+
+.warning {
+  color: v.$warning;
+}
+
+.light {
+  font-weight: v.$font-weight-light;
+}
+
+.normal {
+  font-weight: v.$font-weight-normal;
+}
+
+.medium {
+  font-weight: v.$font-weight-medium;
+}
+
+.semi-bold {
+  font-weight: v.$font-weight-semi-bold;
+}
