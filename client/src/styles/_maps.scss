@@ -1,34 +1,13 @@
 @use './variables' as *;
-@use 'sass:color';
 
 $colors: (
-  primary: (
-    base: $primary,
-    hover: color.adjust($primary, $lightness: $color-change),
-  ),
-  secondary: (
-    base: $secondary,
-    hover:
-      color.adjust($secondary, $lightness: $color-change),
-  ),
-  danger: (
-    base: $danger,
-    hover: color.adjust($danger, $lightness: $color-change),
-  ),
-  success: (
-    base: $success,
-    hover: color.adjust($success, $lightness: $color-change),
-  ),
-  warning: (
-    base: $warning,
-    hover: color.adjust($warning, $lightness: $color-change),
-  ),
-  on-surface: (
-    base: $on-surface,
-  ),
-  surface: (
-    base: $surface,
-  ),
+  primary: $primary,
+  secondary: $secondary,
+  danger: $danger,
+  success: $success,
+  warning: $warning,
+  body: $body,
+  surface: $surface,
 );
 
 $breakpoints: (
