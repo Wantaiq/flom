@@ -7,7 +7,7 @@ type ValidAsTags = 'h1' | 'h2' | 'h3' | 'span' | 'p';
 type TextOptions = {
   variant?: 'small' | 'p' | 'h1' | 'h2' | 'h3';
   tone?:
-    | 'default'
+    | 'body'
     | 'primary'
     | 'danger'
     | 'success'
