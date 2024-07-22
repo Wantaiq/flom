@@ -6,7 +6,7 @@ const Text: TextComponent = ({
   children,
   as: Component = 'p',
   variant = 'p',
-  tone = 'default',
+  tone = 'body',
   fontWeight,
   ...restProps
 }) => {

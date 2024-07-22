@@ -36,7 +36,7 @@ const meta = {
     tone: {
       control: 'select',
       options: [
-        'default',
+        'body',
         'primary',
         'danger',
         'success',

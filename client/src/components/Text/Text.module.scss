@@ -1,5 +1,6 @@
 @use '@/styles/variables' as v;
 @use '@/styles/mixins' as mixin;
+@use '@/styles/maps' as map;
 
 p,
 h1,
@@ -49,38 +50,12 @@ p,
   @include mixin.setVariantResponsiveFonts(small);
 }
 
-.default {
-  color: v.$on-surface;
-}
+@include mixin.generateUtilClassesFromMap(
+  map.$font-weights,
+  'font-weight'
+);
 
-.primary {
-  color: v.$primary;
-}
-
-.danger {
-  color: v.$danger;
-}
-
-.success {
-  color: v.$success;
-}
-
-.warning {
-  color: v.$warning;
-}
-
-.light {
-  font-weight: v.$font-weight-light;
-}
-
-.normal {
-  font-weight: v.$font-weight-normal;
-}
-
-.medium {
-  font-weight: v.$font-weight-medium;
-}
-
-.semi-bold {
-  font-weight: v.$font-weight-semi-bold;
-}
+@include mixin.generateUtilClassesFromMap(
+  map.$colors,
+  'color'
+);
