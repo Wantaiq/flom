@@ -25,3 +25,11 @@
     @warn ("Selected key: `#{$variant} does not exist in typography-rules map");
   }
 }
+
+@mixin generateUtilClassesFromMap($map, $style) {
+  @each $key, $value in $map {
+    .#{$key} {
+      #{$style}: #{$value};
+    }
+  }
+}
