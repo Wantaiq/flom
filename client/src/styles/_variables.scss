@@ -1,0 +1,31 @@
+$color-change: 10%;
+
+$primary: #5c7eca;
+$secondary: #626577;
+$on-surface: #626577;
+$surface: #e6ebf4;
+$danger: #ef4444;
+$success: #16a34a;
+$warning: #e6af26;
+
+$breakpoint-xs: 0px;
+$breakpoint-sm: 490px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1040px;
+$breakpoint-xl: 1440px;
+
+$font-family: Verdana, Geneva, Tahoma, sans-serif;
+$font-size-root: 1rem;
+
+$font-size-xs: #{$font-size-root * 0.875};
+$font-size-sm: #{$font-size-root};
+$font-size-base: #{$font-size-root * 1.125};
+$font-size-md: #{$font-size-root * 1.25};
+$font-size-lg: #{$font-size-root * 1.375};
+$font-size-xl: #{$font-size-root * 1.5};
+$font-size-xxl: #{$font-size-root * 1.75};
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;

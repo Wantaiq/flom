@@ -1,0 +1,27 @@
+@use './maps' as map;
+
+@mixin breakpoint($key) {
+  $size: map-get(map.$breakpoints, $key);
+
+  @if (map-has-key(map.$breakpoints, $key)) {
+    @media screen and (min-width: $size) {
+      @content;
+    }
+  } @else {
+    @warn ("Selected key: `#{$key} does not exist in breakpoints map");
+  }
+}
+
+@mixin setVariantResponsiveFonts($variant) {
+  @if (map-has-key(map.$typography-rules, $variant)) {
+    $variant: map-get(map.$typography-rules, $variant);
+
+    @each $screenSize, $fontSize in $variant {
+      @include breakpoint($screenSize) {
+        font-size: $fontSize;
+      }
+    }
+  } @else {
+    @warn ("Selected key: `#{$variant} does not exist in typography-rules map");
+  }
+}
