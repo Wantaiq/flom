@@ -56,3 +56,33 @@ $font-weight: (
   medium: $font-weight-medium,
   semi-bold: $font-weight-semi-bold,
 );
+
+$spacing: (
+  base: $spacing-root,
+  xxs: $spacing-xxs,
+  xs: $spacing-xs,
+  md: $spacing-md,
+  lg: $spacing-lg,
+  xl: $spacing-xl,
+  xxl: $spacing-xxl,
+);
+
+$border-radius: (
+  base: $border-radius-root,
+  xxs: $border-radius-xxs,
+  xs: $border-radius-xs,
+  md: $border-radius-md,
+  lg: $border-radius-lg,
+  xl: $border-radius-xl,
+  xxl: $border-radius-xxl,
+);
+
+$border-width: (
+  base: $border-width-root,
+  xxs: $border-width-xxs,
+  xs: $border-width-xs,
+  md: $border-width-md,
+  lg: $border-width-lg,
+  xl: $border-width-xl,
+  xxl: $border-width-xxl,
+);
