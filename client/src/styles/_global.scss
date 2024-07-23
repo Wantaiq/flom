@@ -1,5 +1,12 @@
-@use './variables' as *;
+@use './variables' as v;
+@use './mixins' as mixin;
+@use './maps' as map;
+
+:root {
+  --font-family: #{v.$font-family};
+  @include mixin.generateRootVariables(map.$root-variables);
+}
 
 body {
-  background-color: $surface;
+  background-color: var(--color-surface);
 }
