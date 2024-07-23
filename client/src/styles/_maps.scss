@@ -1,6 +1,6 @@
 @use './variables' as *;
 
-$colors: (
+$color: (
   primary: $primary,
   secondary: $secondary,
   danger: $danger,
@@ -10,7 +10,7 @@ $colors: (
   surface: $surface,
 );
 
-$breakpoints: (
+$breakpoint: (
   xs: $breakpoint-xs,
   sm: $breakpoint-sm,
   md: $breakpoint-md,
@@ -40,17 +40,17 @@ $typography-rules: (
   ),
 );
 
-$font-sizes: (
+$font-size: (
+  base: $font-size-base,
   xs: $font-size-xs,
   sm: $font-size-sm,
-  base: $font-size-base,
   md: $font-size-md,
   lg: $font-size-lg,
   xl: $font-size-xl,
   xxl: $font-size-xxl,
 );
 
-$font-weights: (
+$font-weight: (
   light: $font-weight-light,
   normal: $font-weight-normal,
   medium: $font-weight-medium,
