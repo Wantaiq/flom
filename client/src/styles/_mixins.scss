@@ -1,9 +1,9 @@
 @use './maps' as map;
 
 @mixin breakpoint($key) {
-  $size: map-get(map.$breakpoints, $key);
+  $size: map-get(map.$breakpoint, $key);
 
-  @if (map-has-key(map.$breakpoints, $key)) {
+  @if (map-has-key(map.$breakpoint, $key)) {
     @media screen and (min-width: $size) {
       @content;
     }
