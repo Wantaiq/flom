@@ -1,4 +1,3 @@
-@use '@/styles/variables' as v;
 @use '@/styles/mixins' as mixin;
 @use '@/styles/maps' as map;
 
@@ -7,14 +6,14 @@ h1,
 h2,
 h3,
 span {
-  font-family: v.$font-family;
+  font-family: var(--font-family);
 }
 
 p,
 .p,
 span,
 .small {
-  font-weight: v.$font-weight-normal;
+  font-weight: var(--font-weight-normal);
 }
 
 h1,
@@ -23,7 +22,7 @@ h2,
 .h2,
 h3,
 .h3 {
-  font-weight: v.$font-weight-semi-bold;
+  font-weight: var(--font-weight-semi-bold);
 }
 
 h1,
@@ -51,11 +50,11 @@ p,
 }
 
 @include mixin.generateUtilClassesFromMap(
-  map.$font-weights,
+  map.$font-weight,
   'font-weight'
 );
 
 @include mixin.generateUtilClassesFromMap(
-  map.$colors,
+  map.$color,
   'color'
 );
