@@ -29,3 +29,30 @@ $font-weight-light: 300;
 $font-weight-normal: 400;
 $font-weight-medium: 500;
 $font-weight-semi-bold: 600;
+
+$spacing-root: 16px;
+$spacing-xxs: #{$spacing-root * 0.25};
+$spacing-xs: #{$spacing-root * 0.5};
+$spacing-sm: #{$spacing-root * 0.75};
+$spacing-md: #{$spacing-root * 1.25};
+$spacing-lg: #{$spacing-root * 2};
+$spacing-xl: #{$spacing-root * 3.25};
+$spacing-xxl: #{$spacing-root * 5.25};
+
+$border-radius-root: 2px;
+$border-radius-xxs: #{$border-radius-root * 0.25};
+$border-radius-xs: #{$border-radius-root * 0.5};
+$border-radius-sm: #{$border-radius-root * 0.75};
+$border-radius-md: #{$border-radius-root * 1};
+$border-radius-lg: #{$border-radius-root * 1.25};
+$border-radius-xl: #{$border-radius-root * 1.5};
+$border-radius-xxl: #{$border-radius-root * 1.75};
+
+$border-width-root: 1px;
+$border-width-xxs: #{$border-width-root * 0.25};
+$border-width-xs: #{$border-width-root * 0.5};
+$border-width-sm: #{$border-width-root * 0.75};
+$border-width-md: #{$border-width-root * 1};
+$border-width-lg: #{$border-width-root * 1.25};
+$border-width-xl: #{$border-width-root * 1.5};
+$border-width-xxl: #{$border-width-root * 1.75};
