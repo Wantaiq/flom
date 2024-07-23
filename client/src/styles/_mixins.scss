@@ -33,3 +33,11 @@
     }
   }
 }
+
+@mixin generateRootVariables($maps) {
+  @each $mapName, $map in $maps {
+    @each $mapKey, $mapValue in $map {
+      --#{$mapName}-#{$mapKey}: #{$mapValue};
+    }
+  }
+}
