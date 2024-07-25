@@ -11,7 +11,8 @@ type TextOptions = {
     | 'primary'
     | 'danger'
     | 'success'
-    | 'warning';
+    | 'warning'
+    | 'surface';
   fontWeight?: 'light' | 'normal' | 'medium' | 'semiBold';
 };
 
@@ -26,4 +27,4 @@ type TextComponent = <
   props: TextProps<E>,
 ) => ReactElement;
 
-export type { TextComponent };
+export type { TextComponent, TextOptions };

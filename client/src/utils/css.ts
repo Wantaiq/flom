@@ -1,4 +1,4 @@
-const classes = (
+const joinClassNames = (
   ...classes: (string | undefined | null | boolean)[]
 ) => {
   return classes
@@ -6,4 +6,4 @@ const classes = (
     .join(' ');
 };
 
-export { classes };
+export { joinClassNames };
