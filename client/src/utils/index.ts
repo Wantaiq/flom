@@ -1,1 +1,1 @@
-export { joinClassNames } from './css';
+export { joinClassNames, concatinateClasses } from './css';

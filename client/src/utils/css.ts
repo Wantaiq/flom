@@ -6,4 +6,11 @@ const joinClassNames = (
     .join(' ');
 };
 
-export { joinClassNames };
+const concatinateClasses = (
+  element: string,
+  variation: string,
+) => {
+  return `${element}${variation.charAt(0).toUpperCase() + variation.slice(1)}`;
+};
+
+export { joinClassNames, concatinateClasses };
