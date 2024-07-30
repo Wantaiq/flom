@@ -2,12 +2,27 @@
 
 $color: (
   primary: $primary,
-  secondary: $secondary,
+  primary-shade: $primary-shade,
+  accent: $accent,
+  accent-shade: $accent-shade,
+  accent-tint: $accent-tint,
   danger: $danger,
+  danger-shade: $danger-shade,
+  danger-tint: $danger-tint,
   success: $success,
+  success-shade: $success-shade,
+  success-tint: $success-tint,
   warning: $warning,
+  warning-shade: $warning-shade,
+  warning-tint: $warning-tint,
   body: $body,
+  body-shade: $body-shade,
   surface: $surface,
+  surface-tint: $surface-tint,
+  surface-invert: $surface-invert,
+  surface-invert-shade: $surface-invert-shade,
+  body-invert: $body-invert,
+  body-invert-tint: $body-invert-tint,
 );
 
 $breakpoint: (
@@ -20,34 +35,36 @@ $breakpoint: (
 
 $typography-rules: (
   small: (
-    xs: $font-size-xs,
-    sm: $font-size-sm,
+    xs: $font-size-100,
+    md: $font-size-200,
   ),
   p: (
-    xs: $font-size-base,
+    xs: $font-size-300,
   ),
   h1: (
-    xs: $font-size-lg,
-    sm: $font-size-xl,
+    xs: $font-size-500,
+    sm: $font-size-600,
   ),
   h2: (
-    xs: $font-size-md,
-    sm: $font-size-lg,
+    xs: $font-size-400,
+    sm: $font-size-500,
   ),
   h3: (
-    xs: $font-size-base,
-    sm: $font-size-md,
+    xs: $font-size-300,
+    sm: $font-size-400,
   ),
 );
 
 $font-size: (
-  base: $font-size-base,
-  xs: $font-size-xs,
-  sm: $font-size-sm,
-  md: $font-size-md,
-  lg: $font-size-lg,
-  xl: $font-size-xl,
-  xxl: $font-size-xxl,
+  100: $font-size-100,
+  200: $font-size-200,
+  300: $font-size-300,
+  400: $font-size-400,
+  500: $font-size-500,
+  600: $font-size-600,
+  700: $font-size-700,
+  800: $font-size-800,
+  900: $font-size-900,
 );
 
 $font-weight: (
@@ -58,33 +75,35 @@ $font-weight: (
 );
 
 $spacing: (
-  base: $spacing-root,
-  xxs: $spacing-xxs,
-  xs: $spacing-xs,
-  md: $spacing-md,
-  lg: $spacing-lg,
-  xl: $spacing-xl,
-  xxl: $spacing-xxl,
+  100: $spacing-100,
+  150: $spacing-150,
+  200: $spacing-200,
+  300: $spacing-300,
+  400: $spacing-400,
+  500: $spacing-500,
+  600: $spacing-600,
+  700: $spacing-700,
+  800: $spacing-800,
+  900: $spacing-900,
 );
 
 $border-radius: (
-  base: $border-radius-root,
-  xxs: $border-radius-xxs,
-  xs: $border-radius-xs,
-  md: $border-radius-md,
-  lg: $border-radius-lg,
-  xl: $border-radius-xl,
-  xxl: $border-radius-xxl,
+  0: $border-radius-0,
+  100: $border-radius-100,
+  200: $border-radius-200,
+  300: $border-radius-300,
+  400: $border-radius-400,
+  500: $border-radius-500,
+  600: $border-radius-600,
+  700: $border-radius-700,
+  800: $border-radius-800,
+  900: $border-radius-900,
 );
 
 $border-width: (
-  base: $border-width-root,
-  xxs: $border-width-xxs,
-  xs: $border-width-xs,
-  md: $border-width-md,
-  lg: $border-width-lg,
-  xl: $border-width-xl,
-  xxl: $border-width-xxl,
+  100: $border-width-100,
+  200: $border-width-200,
+  300: $border-width-300,
 );
 
 // Root vars source map
@@ -95,4 +114,5 @@ $root-variables: (
   font-weight: $font-weight,
   border-radius: $border-radius,
   border-width: $border-width,
+  spacing: $spacing,
 );
