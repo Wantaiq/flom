@@ -12,7 +12,8 @@ type TextOptions = {
     | 'danger'
     | 'success'
     | 'warning'
-    | 'surface';
+    | 'body-invert'
+    | 'inherit';
   fontWeight?: 'light' | 'normal' | 'medium' | 'semiBold';
 };
 
