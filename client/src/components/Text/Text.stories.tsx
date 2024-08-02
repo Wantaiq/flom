@@ -115,7 +115,7 @@ export const Caption = {
     variant: 'small',
     as: 'p',
   },
-  render: (args) => <Text {...args}>Primary</Text>,
+  render: (args) => <Text {...args}>Caption</Text>,
 } satisfies Story;
 
 export const Primary = {
@@ -124,7 +124,7 @@ export const Primary = {
     as: 'p',
     tone: 'primary',
   },
-  render: (args) => <Text {...args}>Caption</Text>,
+  render: (args) => <Text {...args}>Primary</Text>,
 } satisfies Story;
 
 export const Success = {
