@@ -1,16 +1,16 @@
 @use 'sass:color';
-$color-change: 10%;
+$color-change: 25%;
 
-$primary: #f5f1f1;
+$primary: #ffffff;
 $primary-shade: color.mix(black, $primary, $color-change);
-$accent: #0ff;
+$accent: #2adbdb;
 $accent-shade: color.mix(black, $accent, $color-change);
 $accent-tint: color.mix(white, $accent, $color-change);
 $body: #f5f1f1;
 $body-shade: color.mix(black, $body, $color-change);
 $surface: #1a1a1a;
 $surface-tint: color.mix(white, $surface, $color-change);
-$danger: #f03b3b;
+$danger: #fc6060;
 $danger-shade: color.mix(black, $danger, $color-change);
 $danger-tint: color.mix(white, $danger, $color-change);
 $success: #19b954;
