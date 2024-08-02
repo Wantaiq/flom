@@ -1,0 +1,168 @@
+@use '@/styles/_variables' as v;
+
+.button {
+  --button-border-style: solid;
+  --button-border-width: var(--border-width-100);
+  --button-border-radius: var(--border-radius-500);
+  --button-bg-color: var(--color-surface);
+  --button-bg-color-hover: var(--color-primary-shade);
+  --button-color: var(--color-body);
+  --button-color-hover: var(--color-body-invert);
+  --button-border-color: var(--color-primary);
+  --button-border-color-hover: var(--color-primary-shade);
+  color: var(--button-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--button-padding-y) var(--button-padding-x);
+  transition:
+    color 0.5s,
+    background-color 0.5s,
+    border-color 0.5s,
+    background-position 0.5s ease-out;
+  &:hover,
+  &:active,
+  &:focus {
+    color: var(--button-color-hover);
+  }
+
+  &:not(.button-plain) {
+    border-width: var(--button-border-width);
+    border-color: var(--button-border-color);
+    border-radius: var(--button-border-radius);
+    border-style: var(--button-border-style);
+    background-color: var(--button-bg-color);
+    background-image: linear-gradient(
+      to top right,
+      var(--button-bg-color-hover) 50%,
+      var(--button-bg-color) 50%
+    );
+    background-size: 200% 200%;
+    background-position: 100% 0;
+    &:hover,
+    &:focus,
+    &:active {
+      border-color: var(--button-border-color-hover);
+      background-color: var(--button-bg-color-hover);
+      background-position: 0 100%;
+    }
+  }
+
+  &-plain {
+    background: none;
+    border: none;
+  }
+
+  &-primary {
+    &:is(.button-default) {
+      --button-bg-color: var(--color-primary);
+      --button-color: var(--color-body-invert);
+    }
+    &:is(.button-plain) {
+      --button-color-hover: var(--color-accent);
+    }
+  }
+
+  &-accent {
+    &:is(.button-default) {
+      --button-bg-color: var(--color-accent);
+      --button-color: var(--color-body-invert);
+    }
+
+    &:not(.button-default) {
+      --button-color: var(--color-accent);
+    }
+
+    &:is(.button-plain) {
+      --button-color-hover: var(--color-body);
+    }
+
+    &:not(.button-plain) {
+      --button-bg-color-hover: var(--color-accent-shade);
+      --button-border-color: var(--color-accent);
+      --button-border-color-hover: var(
+        --color-accent-shade
+      );
+    }
+  }
+
+  &-danger {
+    --button-color-hover: var(--color-body);
+    &:is(.button-default) {
+      --button-bg-color: var(--color-danger);
+      --button-color: var(--color-body);
+    }
+
+    &:not(.button-default) {
+      --button-color: var(--color-danger);
+    }
+
+    &:not(.button-plain) {
+      --button-bg-color-hover: var(--color-danger-shade);
+      --button-border-color: var(--color-danger);
+      --button-border-color-hover: var(
+        --color-danger-shade
+      );
+    }
+  }
+
+  &-success {
+    --button-color-hover: var(--color-body);
+    &:is(.button-default) {
+      --button-bg-color: var(--color-success);
+      --button-color: var(--color-body-invert);
+    }
+
+    &:not(.button-default) {
+      --button-color: var(--color-success);
+    }
+
+    &:not(.button-plain) {
+      --button-bg-color-hover: var(--color-success-shade);
+      --button-border-color: var(--color-success);
+      --button-border-color-hover: var(
+        --color-success-shade
+      );
+    }
+  }
+
+  &-warning {
+    --button-color-hover: var(--color-body);
+    &:is(.button-default) {
+      --button-bg-color: var(--color-warning);
+      --button-color: var(--color-body-warning);
+    }
+
+    &:not(.button-default) {
+      --button-color: var(--color-warning);
+    }
+
+    &:not(.button-plain) {
+      --button-bg-color-hover: var(--color-warning-shade);
+      --button-border-color: var(--color-warning);
+      --button-border-color-hover: var(
+        --color-warning-shade
+      );
+    }
+  }
+
+  &-slim {
+    --button-padding-y: 0;
+    --button-padding-x: 0;
+  }
+
+  &-sm {
+    --button-padding-y: var(--spacing-300);
+    --button-padding-x: var(--spacing-400);
+  }
+
+  &-md {
+    --button-padding-y: var(--spacing-400);
+    --button-padding-x: var(--spacing-500);
+  }
+
+  &-lg {
+    --button-padding-y: var(--spacing-500);
+    --button-padding-x: var(--spacing-600);
+  }
+}
