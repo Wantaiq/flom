@@ -13,6 +13,7 @@ const Button: ButtonComponent = ({
   tone = 'primary',
   variant = 'default',
   size = 'md',
+  ...restProps
 }) => {
   const textFontWeight: TextOptions['fontWeight'] =
     variant === 'plain' ? 'normal' : 'medium';
@@ -35,7 +36,9 @@ const Button: ButtonComponent = ({
   );
 
   return (
-    <Component className={classNames}>
+    <Component
+      className={classNames}
+      {...restProps}>
       {textMarkup}
     </Component>
   );
